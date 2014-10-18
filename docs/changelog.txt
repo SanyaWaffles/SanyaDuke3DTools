@@ -1,0 +1,16 @@
+version 0.0.1 - Inital Version (12/13/2011)
+	+ Initial Version and code
+version 0.0.2 - (01/??/2012)
+	+ Some minor fixes to code, documentation
+version 0.1.0 - gcc compiled version (3/23/2012)
+	+ This version contains many changes, especially in how it handles current working directories on *nix/MacOS, and Windows.
+		It also changes how the file path delimiter is handled, conforming to research on the ANSI standard of C.
+	+ No makefiles. To compile I recommend using a command line like:
+		gcc -L/opt/usr/lib/ -I/opt/usr/include/ -lfreeimage -arch i386 -arch x86_64 art2png -o art2png
+	+ This may need further testing on windows
+	+ On mac, use universal macports version of the libfreeimage. Instructions on how to make global universal settings can be found on the eDuke32 compiling on OSX wiki article here:
+		http://wiki.eduke32.com/wiki/Building_EDuke32_on_Mac_OS_X#MacPorts
+	+ on *nix and Windows and MacOS, put the compiled binaries into your path.
+		For Windows users, this might require putting freeimage.dll into your path as well.
+version 0.1.2 - True Color PNG conversion
+	+ png2art now reads a palette.dat to aid in color quantizing of PNG images with a greater BPP than 8-bits (24/32)

@@ -1,0 +1,8 @@
+Ideas:
+
++ Make png2art palettize images if not all ready. This will require loading a palette.
++ Also, make sure palettized images corrispond with palette.
+	+ If not palettized correctly, convert image to proper palette so true-color PNGs could be used with warnings.
++ Make art2png/png2art have a single-file mode, like art2tga/tga2art only had. This is for people who want to work on one file at a time.
++ Comment code better
++ I'm planning on trying to figure out how to make use of Ken Silverman's image library rather than libfreeimage, to minimize external dependencies
